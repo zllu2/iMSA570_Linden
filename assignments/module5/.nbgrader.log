@@ -1,0 +1,35 @@
+[ValidateApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_high.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_low.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_low.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_high.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_low.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/data'
+[ValidateApp | ERROR] Traceback (most recent call last):
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbgrader/apps/validateapp.py", line 68, in start
+        validator.validate_and_print(filename)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbgrader/validator.py", line 257, in validate_and_print
+        results = self.validate(filename)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbgrader/validator.py", line 228, in validate
+        nb = self._preprocess(basename)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbgrader/validator.py", line 216, in _preprocess
+        nb = read_nb(filename, as_version=current_nbformat)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbgrader/nbgraderformat/v1.py", line 124, in read_v1
+        nb = _read(source, as_version, **kwargs)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/nbformat/__init__.py", line 138, in read
+        with io.open(fp, encoding='utf-8') as f:
+    IsADirectoryError: [Errno 21] Is a directory: 'data'
+    
+[ValidateApp | ERROR] nbgrader encountered a fatal error while trying to validate 'data'
+[ValidateApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_high.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
+[ValidateApp | INFO] Validating '/home/data_scientist/test/assignments/module6/assignment_low.ipynb'
+[ValidateApp | INFO] Executing notebook with kernel: python3
