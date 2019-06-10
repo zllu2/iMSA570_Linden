@@ -1,4 +1,4 @@
-# iMSA576_Linden
+# iMSA576
 iMSA576 is an 8 module course.
 - Module 1: Introduction to Jupyter Notebook and Markdown
 - Module 2: Introduction to Python. Function, conditional statement.
