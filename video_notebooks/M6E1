@@ -1,0 +1,107 @@
+
+:00 
+
+ 
+
+In this module we introduce basic visualization with matplotlib and seaborn.  
+
+ 
+
+We load some seaborn sample datasets in the lessons with the seaborn function load_dataset(). Let's explore this function a bit with the help function. 
+
+ 
+
+(open notebook) 
+
+ 
+
+From the help documentation, we can see that this function loads the csv file from a github repository. You can list names of all available datasets with the seaborn function get_dataset_names().  
+
+ 
+
+Let’s try it. 
+
+ 
+
+ 
+
+:30 
+
+(type sns.get_dataset_names()) 
+
+ 
+
+We can ignore the warning messages. So this is the list of all available datasets in seaborn module. 
+
+ 
+
+To load a seaborn dataset, just call load_dataset and pass one of the dataset names listed here.  
+
+ 
+
+Seaborn's load_dataset() is pretty handy when you want to practice with a pandas dataframe. 
+
+ 
+
+ 
+
+1:00 
+
+ 
+
+There are normally multiple ways to create a particular visualization with python. For example, to create a histogram, we can use matplotlib, seaborn, or a pandas series itself. I'll demonstrate them here. 
+
+ 
+
+First, let's plot a histogram with matplotlib. To plot it in a notebook, we need to use matplotlib inline magic to tell the notebook that we want to render the plot within the notebook. 
+
+ 
+
+We'll load the tips dataset from seaborn and plot the total_bill column. (demo2-histogram with matplotlib) There're a lot of options for customizing the histogram. Please check out help documentation of hist() function for more details. 
+
+ 
+
+1:30 
+
+ 
+
+Next, we will use seaborn's distplot() which stands for distribution plot since a histogram is basically a plot of the distribution of a feature. 
+
+The curvy line in the plot is a kde or kernel density estimation, which is a smoothed estimation of the distribution. You can set the function argument "kde=False" to remove the kde line. (demo no kde) distplot() function returns the matplot axis object. You can assign the return value to a variable and set axes properties like plot title, x/y axis limit etc. 
+
+ 
+
+You may also pass an axis to the function, for example, you can define the figure size and pass the axis to distplot. (demo3 pass ax)  
+
+ 
+
+ 
+
+2:00 
+
+Lastly, we will use the pandas series plot function to plot a histogram. Pandas Series has functions for some frequently used plots including histogram. (demo4 df.plot.hist) 
+
+Notice that we call plot.hist() for the pandas Series that holds the total_bill column, we can check out other plot functions with notebook tab completion. (demo5 df.plot.--tab) Then you may use help() or ? operator to find details of each plot function.  
+
+ 
+
+2:30 
+
+Now let's take a look at the fundamental assignments. For the first 2 problems, please pay attention to the plot titles. Please use latex representation of formulas. You can find introduction of latex in module 1. Problem1 description actually gives the title string with the formula in latex representation.  
+
+ 
+
+Problem2 asks you to set a title that has two formulas. Please only apply latex representation on the formulas, not the plain text part, which means, only enclose formulas in pair of dollar signs, not other words in the title like "plot" or "and".  
+
+ 
+
+Problem3 asks you to plot a histogram, please make sure you pick the correct data to plot, which is the open price of a particular stock. I mentioned that there're multiple ways to plot a histogram, for this problem, please use matplotlib. 
+
+3:00 
+
+For problem4, we have a similar code example in our lesson notebook, but please don't simply copy the code from the notebook to your assignment. Make sure you only do what the problem asks you to do, no more, no less. For example, in the lesson notebook example, we set the range limit on the y axis, while the problem doesn't ask you to do that, if you add y limit onto the boxplot, your solution will not be able to pass the autograder. 
+
+ 
+
+That's all about the assignment, good luck. 
+

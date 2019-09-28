@@ -1,0 +1,57 @@
+
+Ron: Welcome to this course. I’m Ron Guymon 
+
+ 
+
+Linden: Hi, I’m Linden Lu. We look forward to guiding you on your journey of learning how to perform data analytics in accounting and financial domains.  
+
+ 
+
+Linden: Over the last ten to fifteen years, it has become apparent that there’s a human gap when it comes to creating data-driven organizations. There have been some wonderful advances in technology that enable companies to use data in very powerful ways. For instance, advances in computational power and cloud storage have made it possible to now use algorithms that were developed decades ago. So the technology is available, but the human expertise to use that technology is not keeping up. 
+
+ 
+
+Ron: Even if you work for a large organization that employs very skilled data scientists, those data scientists do not have time to analyze data in all areas of the organization. Moreover, it appears that all organizational departments are being flooded with data. So your ability to help analyze that data will go a long way. Given that you’re an accounting student, it’s also expected that you have the ability to deal with numeric computations, and the accounting skills that you’re learning are closely related to many general purpose data analytic skills. 
+
+ 
+
+Ron: Many of you are already familiar with Microsoft Excel, which is a powerful tool for analyzing data in a point and click manner. However, the need for advanced analytics, visualizations, and communications have led to a need for learning how to use other data analytic software. 
+
+ 
+
+Linden: In this course you’ll be introduced to Python, which is a general purpose programming language that is also widely used for data analytics. One of the reasons why it’s widely used is because it’s free. It’s also widely used by computer scientists and application developers, so it’s easier for them to integrate processes that are developed in Python into the larger work flow. 
+
+ 
+
+There are several other reasons why Python is used instead of Excel. We’ll talk more about Python in the rest of the course. In this introduction we really want to introduce ourselves and this course. 
+
+ 
+
+Ron: I primarily have a background in accounting, but I’ve also worked in data scientist roles for a couple of companies. Throughout this course, my role will be to emphasize why the topics we teach are important for accountants. 
+
+ 
+
+Linden: I primarily have a background in analytics, but I’ve also had several years of experience teaching analytics to accounting students. Throughout this course, my emphasis will be on explaining the technical details of performing analytics with Python. 
+
+ 
+
+This course is not intended to teach you everything there is to know about Python. Instead, upon completion of this course, you should know how to create and run Python code for performing data preparation and analysis tasks that are often done in Excel. 
+
+ 
+
+Ron: Specifically, you will  
+
+Know how to operate software that will help you create and run Python code. 
+
+Execute Python code for wrangling data from different structures into a Pandas dataframe structure. 
+
+Run and interpret fundamental data analytic tasks in Python including descriptive statistics, data visualizations, and regression. 
+
+Defend the use of relational databases, and know how to manipulate such databases directly through the command line, and indirectly through a Python script. 
+
+ 
+
+Linden: In other courses, you’ll learn how to perform more advanced analyses using Python code. So, we look forward to guiding you on your journey. 
+
+ 
+

@@ -1,0 +1,33 @@
+
+Linden (module objectives): In this module, you’re going to examine a framework, known as the CRISP-DM framework, that can help you remember some of the overarching tasks associated with analyzing data. This framework is not only helpful for providing structure for solving a data analytic problem, but it’s also helpful to keep you from getting sidetracked by projects that are less likely to have a high payoff. 
+
+ 
+
+You’ll also learn some data preparation techniques in Pandas that will help you prepare a dataframe to be analyzed using advanced analytic techniques. 
+
+ 
+
+Finally, you’ll learn how to go beyond a correlation analysis, and learn how to perform linear regression in Python. Linear regression is a fundamental data analytic topic because it underlies many other data analyses. By learning how to perform regression in Python, and interpret the results, you’ll figuratively be trading in a pickaxe for a steam powered drill. 
+
+ 
+
+Ron (data mining is like mining for ore): Data analysis is exciting because it’s like a treasure hunt. That’s probably why the term data mining has come into existence. Mining is a great analogy because finding valuable ore requires some digging and then processing of the raw material before you get the useful nuggets of ore. Similarly, when you mine data, you have to do some mental digging, and then data digging and processing before you get useful nuggets of insight. 
+
+ 
+
+When mining for ore, a small deposit or vein of the ore may be an indication that you’re on the right track. Or you find a lead that takes you to a different kind of ore than what you originally intended to find.  
+
+ 
+
+Linden (recognize leads, perhaps from descriptive statistics): When it comes to mining data, it’s important to recognize leads, perhaps from descriptive statistics, that may indicate that you’re on to something big. It’s also worthwhile to be open to other insights that you didn’t initially intend to find. 
+
+ 
+
+Ron (can get sidetracked or use inefficient tools when mining for ore): When mining for ore, if you’re not careful, you can end up spending a lot of time and money on a lead that turns out to be a small deposit of ore. Time and money can also be wasted if you mine in an inefficient way that doesn’t use the technology that’s available. 
+
+ 
+
+Linden (can also get sidetracked or use inefficient tools when mining data): Similarly, when mining data, it’s really easy to waste time on a side project that doesn’t have much value. It’s also easy to stick with the software tools that you know rather than take time to learn new skills. The fact that you’re tuning in to this video indicates that you’re trying to add to your existing skill set by learning how to use Python to analyze data. Using Python is much more powerful than using Excel because you can analyze a lot more data, and in a lot of different ways. 
+
+ 
+

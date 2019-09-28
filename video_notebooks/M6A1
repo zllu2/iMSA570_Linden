@@ -1,0 +1,39 @@
+
+Ron (visualization is an exciting topic. Objectives): In this module you’ll learn some fundamentals about one of the most appealing topics associated with data analytics: data visualization. Specifically, the objectives of this module are to use Python to: 
+
+Create a simple plot 
+
+Create one-dimensional plots, and  
+
+Create two-dimensional plots 
+
+ 
+
+Of course, the focus is on creating data visualizations in Python, but you’ll also learn about data visualizations in general. I think part of the reason why this topic is appealing is because there’s a lot of room for creativity. 
+
+ 
+
+Linden (data visualization goes beyond words): Another reason why this module is important and appealing is because data visualization is a form of communication that goes beyond words. It’s kind of a universally understood language to encode data using size, shape, position, and color.  
+
+ 
+
+This chart does a good job of showing, rather than just explaining, how position, size, shape, color and a few other attributes can be used to quickly direct attention. 
+
+ 
+
+Ron (power of pre-attentive attributes. Attention directing.): I like this chart a lot. Data visualizations are also powerful because they take advantage of our brain’s incredible power of perception to quickly, efficiently, and memorably communicate information. I like the “preattentive” part of that title, which indicates that something is being communicated before we consciously attend to it. 
+
+ 
+
+As another example, let’s take a look at a line chart of the daily stock price of the S&P500 index. This chart quickly shows the recessionary periods in the economy, the extent of the recession, and when they occurred. Well thought out visualizations can direct attention to some key points with relatively little cognitive effort. Visualizing the results of complex analyses can be a more powerful way to communicate the main point compared to explaining the procedures of the analysis. 
+
+ 
+
+Linden (Exploratory purpose of visualizations): Data visualizations can also summarize a ton of information for exploratory purposes and storytelling. For instance, this candlestick plot could be used by technical analysts to explore for trends in stock prices as a way to forecast the future stock price.  Maps are another example of how data visualization helps in the exploratory process. Well designed infographics are an example of how to use visualizations to tell a story (see lemonly.com). 
+
+ 
+
+Ron (conclusion: visualization is an important aspect of data analytics): In short, the ability to visually communicate information is a really important aspect of data analytics. This module will lay a foundation for you to effectively create data visualizations in Python.  
+
+ 
+

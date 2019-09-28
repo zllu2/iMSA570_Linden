@@ -1,0 +1,27 @@
+
+In this module we learned about python error handling, and two very import programming modules for data analysis, numpy and pandas.  
+
+ 
+
+Error handling is extremely important in python programming. We don’t focus on it a lot in the data analytics curriculum, but it’s used everywhere in python application programming, including all the python modules we use. So, it’s critical to understand python error handling. 
+
+M4_conclusion 
+
+ 
+
+The two programming modules we introduced in this course module, numpy and pandas, are cornerstones of python data analytics. The biggest difference between numpy arrays and Pandas dataframes is that all data points in a numpy array are the same data type, while a dataframe can hold data with different data types. Numpy arrays are frequently used to create numerical values, such as sequences of numbers, or sampling numbers from a distribution. 
+
+Please make sure you understand np.arange() and np.linspace() functions. We will use numpy a lot in python plotting which will be introduced in the following lessons.  
+
+ 
+
+ 
+
+Alternatively, you would use pandas when you want to deal with tabular data, such as data from a spreadsheet or database tables. We will use pandas dataframe intensively in the following lessons.  
+
+ 
+
+For this module’s assignment, there’s not much to say. Just remember that you need to do the problems in order 
+
+ 
+

@@ -1,0 +1,57 @@
+
+In this module we introduced some of the most common python data structures, like strings, lists, and dictionaries. It’s critical that you understand the concept and basic manipulation of these data structures. 
+
+We also introduced loops, which is one of the most important programming concepts.  
+
+A loop can be constructed with many data structures introduced in this module, like a list, tuple or dictionary. However, a loop with a dictionary is a little special because you’ll have to loop through keys or values or both of them together. To construct a fixed number of loops, we usually use a python range object. We can define a range object with 3, 2 or 1 argument. I’ll demonstrate it with examples.. 
+
+ 
+
+ 
+
+I’ll use a for loop to print out the integers in a range object. First let’s create a sequence of integers from 0 to 4. 
+
+We passed three parameters to create the range object: 0 is the start, 5 is the end, and 1 is the step. Notice that 0 is included in the sequence and 5 is not included. That’s right, the start value is included and the stop value is not. This is also true in list slicing. In fact, we can simply construct this range with just one parameter: stop. The reason is that start has a default value of 0 and step has a default value of 1.  
+
+ 
+
+You only need to pass start and step if you need to use other values for them. For example, we can create a sequence of odd integers under 10 with range: 
+
+We construct the range with start equals to 1, end equals to 10 and step equals to 2. 
+
+M3_conclusion.ipynb 
+
+Range() is used frequently in loops with fixed iterations, for example, if you want to print out I love python 5 times: 
+
+ 
+
+I want to stress again that the stop value is not included in the range. Let’s take a look at this example: 
+
+ 
+
+I’ll give you a few seconds to think what the output will be? 
+
+ 
+
+You can see that it’s a sequence of even numbers under 10, from 0 to 8, start is included, and the end value, which is 10, is not included. 
+
+ 
+
+M3_conclusion.ipynb 
+
+ 
+
+You can also create a decreasing sequence with a negative step. For example: 
+
+Now 0 is the end, so it’s not included. 
+
+ 
+
+In conclusion, in this module's assignment, you will need to use the range() function. Please pay attention to start and stop values and keep in mind that stop is excluded. 
+
+ 
+
+M3_conclusion.ipynb 
+
+ 
+

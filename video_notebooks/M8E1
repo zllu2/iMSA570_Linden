@@ -1,0 +1,43 @@
+
+In this module we introduced relational database and python database programming. We used sqlite which is a file based relational database. Sqlite is light weighted and built-in with python, which makes it a perfect database to demonstrate python database programming.  
+
+ 
+
+The way to work with other relational databases like SQL server, mysql and oracle in python is very similar to the way we work with sqlite. 
+
+In lesson 2 we demonstrated how to interact with sqlite directly through the sqlite3 command. We can run sqlite3 commands with exclamation marks in a notebook like this.  
+
+ 
+
+(notebook) 
+
+ 
+
+But this has nothing to do with python. It's equivalent to running sqlite3 command without exclamation marks in a terminal. 
+
+To connect to a sqlite database in python, we’ll need to call the connect() function in sqlite3 module. 
+
+ 
+
+Once we get the database connection, we can get a cursor from the connection and start to interact with the database with the cursor. To ensure the integrity of the database, we'll need to close the cursor and the connection when all database operations are done.  
+
+ 
+
+The context manager that uses a with clause makes things simpler. With the context manager we don't need to worry about closing the connection and the cursor. (demo with clause) All indented code under the with clause is considered in the context of connection con, when the first line out of the context is reached, all transactions related to the db connection are properly committed or rolled back if there are any problems, and all connection and cursor resources are released. 
+
+It's highly recommended to use a with clause when working with databases in python. But for problem 1 in the assignment, you can't use the context manager to create a connection since you need to return the connection from the function. Simply call connect() function to get a connection and return the connection object from the function. Don’t worry about resource leak. The connection and the cursor will be closed at the end of the assignment. 
+
+Another thing you need to pay attention to with problem 1 is that when you need to define a query with multiple lines, use a triple quote since a single quote only works with a single line string. Just like this code in the lesson 3 notebook. (show lesson 3) And make sure that the last column definition doesn't have a comma. (show create table query in lesson 2) 
+
+When there're text values in sql query, the values need to be quoted, you may use a double quote or single quote. For example, in this query definition, "select * from mySuppliers where supplierName='Luna Vista Limited'" (demo select), since supplierName column is a TEXT field, the value 'Luna Vista Limited' has to be quoted. This is also true when you execute the query in python. (demo python) 
+
+In problem 3 of the assignment, please make sure that the query you construct properly quotes the value of the subject. (show assignment problem 3) With python version 3.6 and later, we can use f string to construct a query easily. For example, we can create a query to search student by name. Assume there's table of students which has a name column in the database. (demo create query with f string) We can use an f string to create a query and insert a value with a variable in a curly bracket. The f string will replace variables enclosed in curly brackets with a variable value. Notice that we nested single quotes within double quotes to make sure we quote name value properly in the query. If you are still not sure if the query is correct or not, print it out to check the query before executing it. 
+
+ 
+
+ 
+
+SQL programming is very strict. An extra comma or a missing quote may well prevent your query from working. Please follow the instructions in the assignment closely. If you still have trouble passing an assignment problem, come back to this video and you will probably find the reason. 
+
+Good luck 
+

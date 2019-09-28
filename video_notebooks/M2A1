@@ -1,0 +1,43 @@
+
+Ron (purpose of this module): In this module, you’ll learn how to use Python to perform some basic tasks. Specifically, you’ll  
+
+be introduced to Python,  
+
+learn how to write Python functions, and  
+
+you’ll learn how to create conditional statements. 
+
+ 
+
+As you know, this is a course for accounting students who want to learn how to be more efficient and effective at analyzing data, which is why you’re learning Python. We know that you want to get analyzing the data as quickly as possible, and we also think that you should get to that point as quickly as possible. 
+
+ 
+
+Linden (foundational programming tasks): For that reason, we’re not planning on teaching you everything there is to know about Python and programming. Instead, we plan on teaching you some of the most relevant foundational concepts that will help you with some of the most common data analytic tasks.  
+
+Ron (challenges to get data into a dataframe): Here’s an image of a dataframe about loan applicants. This dataframe is nice and orderly, but data usually doesn’t come in a nicely ordered dataframe like this. Instead, it often has to be extracted from a variety of sources, and then transformed into a common format, and loaded into software that can analyze the data. Even at this point, there would need to be some other transformations and wrangling that need to be done before the data can be analyzed by machine learning algorithms. 
+
+Linden (specifics of this module: keywords, data types, functions, conditional logic): So in this module, you’ll learn some things that can help you do some of the basic tasks. First, you’ll learn some of the keywords, grammar, and mathematical operators that are available in Python. Second, you’ll learn how to create functions, which are the same as macros in Excel, and third, you’ll learn how to use conditional logic, or if-then statements. 
+
+Ron (preparing data takes a lot of work, as do adjusting and closing entries before financial statements can be created): How about if we end with a good analogy. This time a financial accounting analogy. One of the premier outcomes of the accounting cycle is a good set of financial statements that can then be used by analysts to create ratios and look for trends. However, before financial statements can be prepared at the end of a period, it’s important that all adjusting and closing entries are made.  
+
+ 
+
+For instance, it’s important to recognize any financial events that have taken place for which cash has not been exchanged, such as recording the most recent period’s worth of depreciation, or recognizing any prepaid revenue that has been earned. It’s also important to close out nominal accounts, like the revenue accounts. And to make sure that all transactions have been recorded to the correct account.  
+
+ 
+
+Once those adjusting and closing transactions have been recorded they can easily be summarized into a balance sheet, income statement, statement of cash flows, and statement of shareholders’ equity, which can then be shared and analyzed by external stakeholders.  
+
+Ron: So, if at first it doesn’t seem obvious why you need to learn about some of the topics in this module, remember that all of the accounting transactions probably didn’t make sense at first, either, but you needed to learn them in order for the financial statements to articulate correctly. 
+
+ 
+
+Linden: Just as it takes a lot of work to prepare the journal entries before financial statements can be created and then analyzed, it also takes a lot of work to prepare the data into a nice dataframe that can then be analyzed by machine learning algorithms. 
+
+Linden (Programming in Python will shape the way you think and may require a different mindset than what you’re used to.): So, if at first it doesn’t seem obvious why you need to learn about some of the topics in this module, remember that all of the accounting transactions probably didn’t make sense at first, either, but you needed to learn them in order for the financial statements to articulate correctly. 
+
+ 
+
+Ron: We’re confident that by learning some foundational material, you’ll be able to be much more effective at performing data analytic tasks. 
+

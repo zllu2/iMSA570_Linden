@@ -1,0 +1,25 @@
+
+Linden (module topics): In this module you’ll learn about basic data structures and loops. Both of these concepts are very useful for data wrangling. 
+
+ 
+
+Ron (wrangling data analogy to wrangling animals): I like that term data wrangling, which is one that you’ll find quite often when preparing data for analysis. Wrangle is a term used to describe how someone takes charge of a herd of wild animals and orders them. Data is often like a herd of wild animals. It can be scattered all over the place, and it often needs to be ordered in specific ways. Just as a cowboy needs to learn basic skills like riding a horse, using a rope and lasso, and a sheep dog, a data wrangler needs to learn some basic skills for ordering data. You will use these two topics, data structures and loops, very often to wrangle the data. 
+
+ 
+
+Linden (objective of data wrangling is to create a dataframe): I know we’ve said it before, but I want to reiterate that wrangling the data is often more time consuming than actually analyzing the data. Typically, the data structure that is needed for analysis is a dataframe, which is similar to a spreadsheet in which every row is an observation, and every column is a feature. However, data does not often come in that structure. Instead, data often comes in a variety of other formations that need to be sliced up, reordered, and converted to a different type. 
+
+ 
+
+Ron (data format from Quickbooks export and how it needs to be cleaned up): For instance, here’s an image of sample journal entry data that comes from Quickbooks. While this is a helpful format for humans to read, it won’t work for data analytics. Hence the first two objectives are to learn about and use different data structures in Python. After that you’ll learn about some efficient ways to process data. 
+
+ 
+
+Linden (why loops are important): Loops are one of the most important skills to learn when it comes to data wrangling because they prevent you from typing out repetitive code. For instance, writing code using loops that can iterate through each row, or column, of this sample Quickbooks data will save you tons of time. It will also make it much easier to update and change. 
+
+ 
+
+Ron (conclusion): So, by the time you’re done with this module, you should know some key skills for wrangling data: recognizing basic data structures, manipulating those data structures and writing code that can iterate through each element of a data structure. 
+
+ 
+

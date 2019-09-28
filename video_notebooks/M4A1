@@ -1,0 +1,21 @@
+
+Linden (objectives of module): In this module you’ll learn some basics about writing a Python program, like how to handle errors, which is called exception handling. You’ll also learn how to incorporate modules into your own code. Modules are groups of existing functions. We’ll focus on two modules that are used almost all the time by data analysts who are working in Python: Numpy and Pandas. 
+
+ 
+
+Ron (Importance of easily converting thought into code): Both accounting and Python are languages. Accounting is the language of business. A budget is an accounting technique for a company to convert ideas about how to run a company into a concrete plan of action. Python is a programming language. A script, or piece of code, is a programming technique that converts abstract ideas into concrete actions that will be taken by a computer. Whether you’re talking about a spoken language, the language of business, or a programming language, it’s desirable if you can easily convert abstract ideas in your head into a message that will be interpreted correctly by the receiver. 
+
+ 
+
+Linden (zen of python contains great guidelines): Remember the Zen of Python? It’s a statement that lays out some really good ideas for writing code in a way that will be easy to interpret by the computer, and by other humans. 
+
+ 
+
+Ron (Good python code is like an auditor’s opinion): In many ways, good Python code is like an auditor’s opinion: simple, explicit, and readable, and any errors or qualifications should be identified. 
+
+ 
+
+Linden (Good code is easy to read and quick to execute): An overriding ideal is that good Python code should be easy to read and quick to execute. In this module, you’ll learn about several ways contributors to the Python community have made Python easy to read and quick to execute for data analysis. Specifically, you’ll learn about the importance of breaking code down into separate libraries and packages. Then you’ll learn about two important packages that are used all the time to prepare in data for analysis: NumPy and Pandas. These two packages are part of the reason why Python is commonly used for data analytics. 
+
+ 
+

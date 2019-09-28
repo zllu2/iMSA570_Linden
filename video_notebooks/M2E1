@@ -1,0 +1,73 @@
+
+In this module you learned basic features in the python programming language like basic python data types, the Zen of Python, running and creating functions, and conditional logic. You should have plenty of opportunities in the upcoming modules to apply all of these concepts. 
+
+ 
+
+Among all the things you learned today, variable scope is probably the most easily  misunderstood by beginners. Here I’ll use an example to demonstrate the concept. 
+
+ 
+
+In this notebook, we first define 4 global variables, dividend, divisor, quotient and remainder, all with value 0.  
+
+ 
+
+Then we define a function divide(), which takes two arguments, dividend and divisor, and returns 2 values, quotient and remainder. 
+
+ 
+
+The two function arguments, dividend and divisor, and the 2 variables defined inside the function body, quotient and remainder, are all local variables. Notice that we defined 4 global variables with the same names, but they don’t have any relationship to the local variables in the function. 
+
+ 
+
+M2_conclusion.ipynb 
+
+ 
+
+Let’s run the cell to define the function, then call the function in a new cell with 2 argument values 11 and 4. The print statements within the function prints out the 4 local variable values. When we set the dividend equal to 11 and the divisor equal to 4, we established argument values that were passed into the function. Then, the quotient of 2 and remainder of 3 were calculated inside the function. It returned these values in a tuple with 2 elements. These elements are referred to as return values, because they are returned by the function. 
+
+ 
+
+M2_conclusion.ipynb 
+
+ 
+
+Then in a new cell, we print out the 4 variable values, this time, they all have value 0. Because what we print now are global variables and they are not affected by local variable definitions within the function.  
+
+ 
+
+This is the concept of variable scope. But even global variables and local variables won’t affect each other. To avoid confusion, it’s best if you don’t define global and local variables with the same name. 
+
+ 
+
+ 
+
+M2_conclusion.ipynb 
+
+ 
+
+Another thing worth mentioning is that when a function returns multiple values, we normally use multiple variables to unpack the function return values when we call the function. As demonstrated in the next cell, q and r equals to divide(11,4). Q will have the first return value which is 2 and r will have the second return value which is 3. 
+
+M2_conclusion.ipynb 
+
+ 
+
+Now, I’d like to give you some helpful hints for completing the assignment. 
+
+ 
+
+(open assignment 2) 
+
+ 
+
+In this module’s fundamental assignment,  
+
+ problem2 relies on the solution of problem1. In several course assignments a problem could depend on the solution of one or more previous problems. It's recommended that you work on your problems in order. If you have finished problem 1 today and open the assignment the next day to continue on to work on problem 2, you will still need to run everything starting with the first code cell. Or you may simply select problem 2 code cell and click Cell-Run all above to execute all code cells above. 
+
+ 
+
+That’s all I have to say about the assignment, good luck. 
+
+ 
+
+Assignment 2 notebook 
+

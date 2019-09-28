@@ -1,0 +1,101 @@
+
+We hope that by now you have a vision of where you’d like to go with data analytics in accounting. We also hope that you have a good foundation on how to use the Jupyter Notebook IDE, as well as how to format text using Markdown. 
+
+ 
+
+One suggestion is that eventually you should learn how to use keyboard shortcuts in jupyter notebooks for common things, like adding and deleting cells, or executing cells so that you don’t have to use the mouse as much. 
+
+ 
+
+Next, it’s important to know a couple of different ways in which you can save Jupyter Notebook files. You can share Jupyter Notebook files as .ipynb files, which allow you to run the code and interact with everything, or you can save it in non-interactive ways, like an  .html file. Those formats are useful if you’re just sharing the file in a way for someone to read, but not interact with. 
+
+ 
+
+ 
+
+ 
+
+Finally, I’d like to mention that even though it’s not required for this course, it’s highly recommended that you install your own jupyter notebook server. It’s very simple and only takes a few minutes. There’s installation instruction in the lesson 2 notebook. 
+
+ 
+
+With your own notebook server, you can download notebooks you are interested in as .ipynb files and open them on your server. 
+
+ 
+
+Another reason is that you will not have access to the course notebook server after the semester. If you want to continue to learn and practice python with notebook, you’d better have your own notebook server. 
+
+ 
+
+Now, I’d like to give you some helpful hints for completing the assignments... 
+
+ 
+
+Since this is the first module of the course, I’d like to explain the assignment a bit.  
+
+ 
+
+(open demo assignment) 
+
+ 
+
+This is a demo assignment.  
+
+ 
+
+The first markdown cell lists some important information you need to be aware of for the assignment. Please read it carefully.  
+
+ 
+
+You should only write your answers under your code here, not anywhere else. Don't change anything else, including the file name of the assignment notebook. Once you are done with your assignment, don’t forget to save the assignment file. Even though the notebook server automatically saves updates, it only does this periodically. To make sure the latest version is saved, you should click File, then Save and CheckPoint to save your work. 
+
+ 
+
+The assignments are autograded. Each problem in the assignment has an autograder cell below the answer cell. If your solution is wrong, the autograder of the problem will throw error messages when you run it. 
+
+ 
+
+Now let’s look at the problemes in the demo assignment. 
+
+ 
+
+(run first code cell) 
+
+Make sure you run the first code cell to import the needed modules. 
+
+ 
+
+The first problem asks you to assign value 1 to variable a. If you assign a wrong value to a and run the answer cell and the autograder cell, you will see an error message. 
+
+Correct your answer and run the cell and the autograder cell again. Now the error message is gone which means you’ve solved problem 1 correctly. 
+
+ 
+
+Problem 2 asks you to assign value 2 to variable b. If we do it correctly and run the code cell and autograder below, the cells are executed without any error.  
+
+Now that we've finished all the problems, make sure you click kernel-restart run all to run the whole assignment notebook from start to end. If the notebook runs through the last cell without a problem, you may save your assignment with File-Save and checkpoint.  
+
+ 
+
+Now let's take a look at the module 1 fundamental assignment. 
+
+ 
+
+Remember to run the first code cell before you proceed to problem 1. 
+
+ 
+
+The first 2 problems are straightforward.  
+
+ 
+
+The 3rd problem asks you to convert a markdown cell to code cell. If you click the area where Your code is, you will see it's a markdown cell with 2 lines. All you need to do is to convert this cell to code cell and run it.  
+
+ 
+
+Problem 4 asks you to create the largest header. It's a little tricky here. We know that headers are elements in markdown cells. But to enable auto grading, problem 4 needs you to write a header in a code cell. You need to write the markdown under #Your code here. Then run the cell and the cell below, the cell below will retrieve what you write and display it as if in a markdown cell.  
+
+ 
+
+All right, that's all about the assignment. Good luck. 
+

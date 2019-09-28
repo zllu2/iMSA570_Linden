@@ -1,0 +1,35 @@
+
+:00 
+
+Ron (do you believe your effort will be worth it? Absolutely. Analytics are everywhere and accountants should know how to perform them. But learning is difficult.): Since this course is primarily intended for accounting students, rather than computer science majors for instance, it’s important that you believe that learning how to perform advanced analytics is worth your time and effort. This will help you get through some of the harder material. 
+
+ 
+
+:30 
+
+At some point early on in this course, you’ll probably feel like you’re on the top of mount stupid. Let me explain. This image shows the relationship of wisdom and confidence and is known as the Dunning-Kruger effect. The valley of despair is a relatively long trough.  
+
+ 
+
+I think this is representative of my own life. As I start learning a new topic, I often find that I initially get excited about my progress. However, once I start realizing what I don’t know, it can be frustrating. At these times, I start getting disillusioned and I have second thoughts about whether I should continue. This is where it’s really important to believe that it’s worth the effort to keep learning. 
+
+ 
+
+1:00 
+
+So, in this in this module, I hope that you gain a clearer vision of why it’s important to analyze data with Python so that you can make it through the difficult material. You’ll also learn some tools that will help you use Python. Linden, what do you want them to know about the tools that they’ll be using? 
+
+ 
+
+1:30 
+
+Linden (Key things to know about tools for coding in Python): In this module, you’ll also learn how to use some software that will help you learn how to code with Python. We’ll focus on Jupyter Notebook, which is a popular web based, integrated development environment or IDE, that is used to create and share document that contains code, visualizations and formatted text. If you’ve ever used the Visual Basic Editor to create or edit macros in Excel, then you’ve used an IDE. Taking some time to learn how to use Jupyter Notebook will make it much easier for you to learn how to use Python. 
+
+ 
+
+2:00 
+
+We will also focus on markdown, which is a simple way to convert plain text to formatted text in jupyter notebook. At this point you might be wondering why it’s important to learn how to convert plain text to formatted text. Don’t word processors, like Microsoft Word or Google Docs, already do that? Well, yes, they do, but they don’t do it in a coding environment. Markdown is the set of relatively simple rules that can be used in jupyter notebook for creating bulleted lists, bold fonts, dividing lines, and other such formatting techniques so that you can combine prose with code and visualizations all in the same notebook document. 
+
+ 
+

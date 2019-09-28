@@ -1,0 +1,81 @@
+
+In this module we introduced different ways to read and write files with python.  
+
+To load data for analysis, we usually use pandas functions. For example, we can load a csv file into a pandas DataFrame with pandas read_csv() function. Pandas can actually load data from a lot of other data sources, like excel files, fixed width text files, relational databases etc. You may check it out with the notebook tab completion features to see all of the read functions in pandas.  
+
+By the way, tab-completion is one of the most useful features in jupyter notebook. I’ll demonstrate how to use it in a notebook. 
+
+(open m5_conclusion and demo) 
+
+We first import pandas as pd, then type pd.read, then press TAB key. Notebook will list all the pandas functions start with help.  
+
+you can see that there’re many pandas read functions. Like read csv, read html, read json, read sql etc. For more details of these functions, you don’t have to leave the notebook, just use help() function. For example, help(pd.read_csv) prints out help document of the function.  
+
+(out of screen) 
+
+When you load a dataset into a pandas dataframe, the first thing you want to do is take a peek at the data. You may use dataframe function head(), tail(), or sample() to view a few rows of the dataset. But remember, never ever print out the whole dataframe in your notebook. The reason is that cell output is also part of the notebook file. I’ll demonstrate this with iris data.  
+
+(open notebook) 
+
+We first load the iris data from the seaborn module, you may call df.head(), tail or sample to view a subset of the dataset. But if you do this: df 
+
+The whole dataframe content is printed out in the output area.  
+
+Since the output is part of the notebook, this means your notebook file size is larger than the size of the dataset. 
+
+When the dataset is really big this can cause a serious problem. Specifically, the next time you try to re-open your notebook file, because of its size, it could take forever to open and there’s nothing you can do about it. 
+
+Pandas DataFrame is the most used data structure in python data analytics. So please practice as much as you can to make sure you are familiar with dataframe functionalities.  
+
+One of the most import things you need to know is how to use boolean mask to select rows from a datafame. 
+
+I’ll demonstrate it with iris data. 
+
+(open notebook) 
+
+I’d like find all iris with sepal length greater than 7.5. 
+
+(type python code) 
+
+Notice that in the condition, I use df.sepal_length to refer to the column. You can only refer to a dataframe column with dot column name when the column name is one word. If there’s a space or special characters in the column name, you’ll have to quote the column name and put it in a bracket like this: 
+
+(type python code) 
+
+In lesson 3 we demonstrated how to calculate the mean and median of a dataframe column. There are other statistical functions you can use. For example, min,max and mode etc, which return the minimum, maximum and mode of a column respectively. I’ll demonstrate these functions with an example.  
+
+(open notebook) 
+
+Let’s checkout the maximum sepal width in the iris dataset. 
+
+(type code) 
+
+Now I give you a challenge, what if I want to find the maximum sepal width for those iris that have sepal length greater than 7.5? 
+
+You may pause the video and think about it. 
+
+ 
+
+(open notebook) 
+
+ 
+
+Ok, now I’ll show you how to do it. First, we need to use boolean mask to get all iris that have sepal length greater than 7.5. Then we use the column name to get the sepal_width column; Now we can call max function to get the value. 
+
+For the assignment,  
+
+(open assignment) 
+
+First, please remember to work on the problems in order. 
+
+ 
+
+Problem 4 is a little tricky. You will need to first find all the rows for which the value in the stock column equals a specific symbol, for which you’ll need to use boolean mask, then you will need to get the maximum and minimum values in the “close” column.  
+
+ 
+
+Make sure you return the 2 values in correct order, highest close price first, followed by lowest close price. 
+
+ 
+
+That's all for the assignment. Good luck. 
+
