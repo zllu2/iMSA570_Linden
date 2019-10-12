@@ -609,7 +609,7 @@ c.ClearSolutions.code_stub = {'python': '# YOUR CODE HERE\n'}
 ## A key that is unique per instructor and course. This MUST be specified, either
 #  by setting the config option, or using the --course option on the command
 #  line.
-#c.Exchange.course_id = ''
+c.CourseDirectory.course_id = 'accy576'
 
 ## Whether the path for fetching/submitting  assignments should be prefixed with
 #  the course name. If this is `False`, then the path will be something like
@@ -618,7 +618,7 @@ c.ClearSolutions.code_stub = {'python': '# YOUR CODE HERE\n'}
 #c.Exchange.path_includes_course = False
 
 ## The nbgrader exchange directory writable to everyone. MUST be preexisting.
-#c.Exchange.root = '/srv/nbgrader/exchange'
+#c.Exchange.root = '/Users/lindenlu/uiuc/Spring_2019/iMSA570_Redesign/iMSA570_Linden/assignments/srv/nbgrader/exchange'
 
 ## Format string for timestamps
 #c.Exchange.timestamp_format = '%Y-%m-%d %H:%M:%S.%f %Z'
