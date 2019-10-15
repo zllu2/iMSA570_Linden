@@ -1,6 +1,6 @@
 from nbgrader.plugins import ExportPlugin
 from nbgrader.api import MissingEntry
-
+import json
 
 class JsonExportPlugin(ExportPlugin):
     """JSON exporter plugin."""
@@ -13,8 +13,6 @@ class JsonExportPlugin(ExportPlugin):
             dest = self.to
 
         #self.log.info("Exporting grades to %s", dest)
-
-        fh = open(dest, "w")
 
         assignment = gradebook.find_assignment("module")
 
@@ -31,9 +29,10 @@ class JsonExportPlugin(ExportPlugin):
         else:
             score = max(0.0, submission.score) / max_score
 
-        if score > 0.999:
-            fh.write('{' + '"fractionalScore": {0}, "feedback":"Congrats! All test cases passed!"'.format(score) + '}\n')
-        else:
-            fh.write('{' + '"fractionalScore": {0}, "feedback":"Your solution failed one or more test cases!"'.format(score) + '}\n')
+        feedback = "Congrats! All test cases passed!"
+        if score < 0.999:
+            feedback = "Your solution failed one or more test cases!"
+        dict_to_coursera = {'fractionalScore':score, "feedback":feedback}
 
-        fh.close()
+        with open(dest, 'w') as fout:
+            json.dump(dict_to_coursera, fout)

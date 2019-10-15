@@ -15,7 +15,7 @@
     - execute_grader.sh
     - exporter.py
     - nbgrader_config.py
-    - source
+    - source(only keep low assignment in each module)
 10. Run test.sh to test
     - Make sure shared/submissions/assignmenti_low.ipynb exists in current folder
 11. Build and Upload docker tar file to coursera program assignment
@@ -38,13 +38,14 @@ $ source activate p27
 
 # Install courseraprogramming
 $ git clone https://github.com/coursera/courseraprogramming
+# Need to run following to install in p27 every time
 $ cd courseraprogramming/
 $ python setup.py develop
 $ pip install -r test_requirements.txt
 
 # put /Users/lindenlu/uiuc/Spring_2019/iMSA570_Redesign/coursera_nbgrader_setup/shared/submission to docker file sharing
 
-sudo ./test.sh 1
+sudo ./test.sh
 
 
 
