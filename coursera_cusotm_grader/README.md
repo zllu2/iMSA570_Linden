@@ -71,3 +71,22 @@ Install [courseraprogramming](https://github.com/coursera/courseraprogramming#gr
 sudo pip install courseraprogramming
 
 -----
+
+# custom grader doc(https://github.com/coursera/programming-assignments-demo/tree/master/custom-graders)
+# Upload grader to coursera using courseraprogramming(https://github.com/coursera/courseraprogramming#upload)
+1. Find out course id(id in returned json) with slug: https://api.coursera.org/api/onDemandCourses.v1?q=slug&slug=accounting-data-analytics-python
+2. courseraprogramming upload $MY_CONTAINER_IMAGE $COURSE_ID $ITEM_ID $PART_ID --additional_item_and_part $ITEM_ID2 $PART_ID2 $ITEM_ID3 $PART_ID3
+
+ACCY576:
+course id: wBp37bIYEemRtxIG3uYysg
+module 1 itemid: 5FK0X partid:tldMu
+module 2 itemid: UGexs partid:sm6HU
+module 3 itemid: YJqmG partid:0jC1R
+module 4 itemid: LAhNW partid:uBbcH
+module 5 itemid: LJxSb partid:hJtGd
+module 6 itemid: EpcDF partid:cyaV2
+module 7 itemid: Ju9jZ partid:Csvn3
+module 8 itemid: T61Ru partid:Sll1A
+
+# full command for 576
+courseraprogramming upload accy576_grader wBp37bIYEemRtxIG3uYysg 5FK0X tldMu --additional_item_and_part UGexs sm6HU --additional_item_and_part YJqmG 0jC1R --additional_item_and_part LAhNW uBbcH --additional_item_and_part LJxSb hJtGd --additional_item_and_part EpcDF cyaV2 --additional_item_and_part Ju9jZ Csvn3 --additional_item_and_part T61Ru Sll1A
