@@ -38,8 +38,8 @@ Choices: ...
   - Type: Multiple choice (multiple correct response)
   - Answer: Rugplot; Boxplot; Histogram;
   - Choices: Rugplot; Boxplot; Histogram; Scatter plot
-- Question 4.2: Which of the following plots are one dimensional?
-  - Type: Multiple choice (multiple correct response)
+- Question 4.2: Which of the following plots is two dimensional?
+  - Type: Multiple choice (single correct response)
   - Answer: Scatter plot
   - Choices: Rugplot; Boxplot; Histogram; Scatter plot
 
@@ -81,7 +81,7 @@ Choices: ...
   - Choices: Positive correlation; Negative correlation; No correlation.  
 - Question 8.2: When the vertical values in a scatter plot, or y-axis, display an decrease as the horizontal value, or x-axis, increases, the correlation is called?
   - Type: Multiple choice (single correct response)
-  - Answer: Positive correlation
+  - Answer: Negative correlation
   - Choices: Positive correlation; Negative correlation; No correlation.
 
 - Question 9.1: True or False? A scatter plot can be used to show correlation of two continuous features?

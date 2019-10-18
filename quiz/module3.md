@@ -76,7 +76,7 @@ Choices: ...
  - Question6.1: What would be the output of "Python!".upper()
     - Type: Multiple Choice
     - Answer: "PYTHON!"
-    - Choices: "PYTHON!", "python!", "Python!", "Python!"
+    - Choices: "PYTHON!", "python!", "Python!"
 
  - Question 6.2: What would be the output of "one, two, three".split()
     - Type: Multiple Choice
@@ -118,7 +118,7 @@ Choices: ...
 - Question 9.1: Which of the following would loop through all integers from 1 to 10?
     - Type: Multiple Choice
     - Answer: for i in range(1,11)
-    - Choices: for i in range(10), for i in range(1,10), for i in range(11), while i in range(10)
+    - Choices: for i in range(10), for i in range(1,10), for i in range(11), while i in range(1,11)
 
  - Question 9.2: Which of the following would loop until i is greater than 10?
     - Type: Multiple Choice

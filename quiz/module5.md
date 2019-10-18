@@ -101,7 +101,7 @@ Choices: ...
   - Type: Multiple Choice (Single Answer)
   - Answer: 3.5
   - Choices: 3; 4; 3.5
-- Question 9.2: What is median of the numbers in the list [1,2,3,4,5,]?
+- Question 9.2: What is median of the numbers in the list [1,2,3,4,5]?
   - Type: Multiple Choice (Single Answer)
   - Answer: 3
   - Choices: 3; 4; 3.5

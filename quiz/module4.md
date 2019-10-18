@@ -105,7 +105,7 @@ Choices: ...
   - Choices: df.head(5), df.tail(5), df.sample(5)
 - Question 8.3: Assume df is a DataFrame, which code prints random 5 samples of the DataFrame?
   - Type: Multiple choice (single correct response)
-  - Answer: df.head(5)
+  - Answer: df.sample(5)
   - Choices: df.head(5), df.tail(5), df.sample(5)
 - Question 9.1 What is data type of one row of a DataFrame?
   - Type: Multiple choice (single correct response)
