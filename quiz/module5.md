@@ -65,7 +65,7 @@ Choices: ...
 - Question 6.2: Assume df is a DataFrame that has columns 'Name' and 'Age', which code selects all rows in df that have Age less than 30?
   - Type: Multiple Choice (Single Answer)
   - Answer: Both of above
-  - Choices: df[df.Age<30]; df[df['Age']<20]; Both of above; None of above.
+  - Choices: df[df.Age<30]; df[df['Age']<30]; Both of above; None of above.
 
 - Question 6.3: Assume df is a DataFrame that has columns 'Name' and 'Age', which code selects all rows in df that have Age greater than 20 and less than 30?
   - Type: Multiple Choice (Single Answer)
@@ -73,8 +73,8 @@ Choices: ...
   - Choices: df[(df.Age>20) & (df.Age<30)]; df[df.Age>20 & df.Age<30]; Both of above; None of above.
 - Question 6.4: Assume df is a DataFrame that has columns 'Name' and 'Age', which code selects all rows in df that have Age less than 20 or greater than 30?
   - Type: Multiple Choice (Single Answer)
-  - Answer: df[(df.Age>20) | (df.Age<30)]
-  - Choices: df[(df.Age>20) | (df.Age<30)]; df[df.Age>20 | df.Age<30]; Both of above; None of above.
+  - Answer: df[(df.Age<20) | (df.Age>30)]
+  - Choices: df[(df.Age<20) | (df.Age>30)]; df[df.Age<20 | df.Age>30]; Both of above; None of above.
 - Question 7.1: Assume df is a DataFrame that has columns 'Name' and 'Age', what data type is df['Age']?
   - Type: Multiple Choice (Single Answer)
   - Answer: Series

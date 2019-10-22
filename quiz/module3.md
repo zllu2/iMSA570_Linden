@@ -29,12 +29,12 @@ Choices: ...
  - Question 2.1: Which of the following data structures are mutable, meaning that values can be changed in place.
     - Type: Multiple Choice (Multiple Correct Answers)
     - Answer: list, dictionary;
-    - Choices: list; tuple; string; dictionary
+    - Choices: list; tuple; dictionary
 
  - Question 2.2: Which of the following data structures are immutable, meaning that values cannot be changed in place.
     - Type: Multiple Choice (Multiple Correct Answers)
-    - Answer: tuple, string
-    - Choices: list; tuple; string; dictionary
+    - Answer: tuple
+    - Choices: list; tuple; dictionary
 
  - Question 3.1: What would be the result of executing the code: "1 in [1,2,3]"
     - Type: Multiple Choice (Single Correct Answer)
@@ -49,7 +49,7 @@ Choices: ...
  - Question 4.1: How would you access the 3rd element of a list called my_list?
     - Type: Multiple Choice or Free Response Programming Question
     - Answer: my_list[2]
-    - Choices: my_list[3]; my_list(3); my_list[2]; my_list(3)
+    - Choices: my_list[3]; my_list(3); my_list[2]; my_list(2)
 
   - Question 4.2: How would you change the value of the 1st element of a list called my_list to 7?
     - Type: Multiple Choice or Free Response Programming Question

@@ -115,10 +115,10 @@ Choices: ...
   - Type: Multiple choice (single correct response)
   - Answer: Series
   - Choices: DataFrame; Series; List; Numpy array
-- Question 10.1 Assume df is a DataFrame, what is df[1:5]?
+- Question 10.1 Assume df is a DataFrame, what is df[0:5]?
   - Type: Multiple choice (single correct response)
-  - Answer: A DataFrame that has the first 4 rows of df.
-  - Choices: A DataFrame that has the first 4 rows of df; A DataFrame that has the first 5 rows of df;A DataFrame that has the first 4 columns of df; A DataFrame that has the first 5 columns of df;
+  - Answer: A DataFrame that has the first 5 rows of df.
+  - Choices: A DataFrame that has the first 5 rows of df; A DataFrame that has the first 5 columns of df;
 - Question 10.2 Assume df is a DataFrame that has 4 columns, 'C1', 'C2', 'C3', 'C4', what is df['C1']?
   - Type: Multiple choice (single correct response)
   - Answer: A Series which is column 'C1' of df.

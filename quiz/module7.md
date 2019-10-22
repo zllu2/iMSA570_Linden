@@ -83,11 +83,11 @@ Choices: ...
     - Answer: False
     - Choices: True; False
 
-- Question 9.1: If a categorical variable has 5 unique values, how many dummy variables are needed for this variable?
+- Question 9.1: A categorical variable has 5 unique values, when create dummy variables for this feature, at lease how many dummy variables are needed for this variable?
   - Type: Multiple Choice (Single correct answer)
   - Answer: 4
   - Choices: 3; 4; 5; 6
-- Question 9.2: If a categorical variable has 3 unique values, how many dummy variables are needed for this variable?
+- Question 9.2: A categorical variable has 3 unique values, when create dummy variables for this feature, at lease how many dummy variables are needed for this variable?
   - Type: Multiple Choice (Single correct answer)
   - Answer: 2
   - Choices: 1; 2; 3; 4

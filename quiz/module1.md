@@ -66,7 +66,7 @@ Choices: ...
   - Answer: Both of above
   - Choices: by pressing `Esc`;  by using the mouse to click outside a cell's editor area; Both of above.
 
-- Question 5.2: In a notebook cell, how to enter edit mode from command mode?
+- Question 5.2: In a notebook code cell, how to enter edit mode from command mode?
   - Type: Multiple Choice (Single Correct Answer)
   - Answer: Both of above
   - Choices: by pressing `Enter`;by using the mouse to click on a cell's editor area; Both of above.
