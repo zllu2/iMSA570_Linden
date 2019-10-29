@@ -90,3 +90,19 @@ module 8 itemid: T61Ru partid:Sll1A
 
 # full command for 576
 courseraprogramming upload accy576_grader wBp37bIYEemRtxIG3uYysg 5FK0X tldMu --additional_item_and_part UGexs sm6HU --additional_item_and_part YJqmG 0jC1R --additional_item_and_part LAhNW uBbcH --additional_item_and_part LJxSb hJtGd --additional_item_and_part EpcDF cyaV2 --additional_item_and_part Ju9jZ Csvn3 --additional_item_and_part T61Ru Sll1A
+
+# Copy files to coursera
+Run ./copy_files.sh to create zip files for lesson and assignments
+Upload zip files to coursera through instructor Workspace
+Open a new notebook and run following.
+Remove existing folder first with !rm -r Assignments/Lessons if necessary.
+```
+import zipfile as zf
+files = zf.ZipFile("Lessons.zip", 'r')
+files.extractall('.')
+files.close()
+
+files = zf.ZipFile("Assignments.zip", 'r')
+files.extractall('.')
+files.close()
+```
