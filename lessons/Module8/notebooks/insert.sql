@@ -15,3 +15,4 @@ VALUES (1, 29.95, 101, '2015-02-10', 'Male bathing suit, blue'),
        (5, 32.95, 102,'2014-12-22', 'Blue-striped beach towel'),
        (6, 12.95, 103, '2015-03-12', 'Flip-flop'),
        (7, 34.95, 103, '2015-01-24', 'Open-toed sandal') ;
+        
