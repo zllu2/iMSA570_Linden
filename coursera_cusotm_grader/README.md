@@ -20,8 +20,15 @@
     - Make sure shared/submissions/assignmenti_low.ipynb exists in current folder
 11. Build and Upload docker tar file to coursera program assignment
 
+# Refresh notebook on coursera
+1. Upload new notebook from Instructor workspace
+2. Open the file with Learner's view, rename file
+3. In the url, add ?forceRefresh=true at the end and reload page
+4. Delete renamed file
+
 -----
 # build docker image
+# in iMSA570_Redesign/coursera_nbgrader_setup/build_grader/ run:
 sudo docker build -t accy576_grader .
 # list docker image
 docker image list
@@ -33,8 +40,7 @@ sudo docker save accy576_grader -o accy576_grader.tar
 # test
 # Set python 2.7 env
 $ conda create -n p27 python=2.7
-$ conda activate p27 OR
-$ source activate p27
+$ conda activate p27
 
 # Install courseraprogramming
 $ git clone https://github.com/coursera/courseraprogramming
@@ -106,3 +112,4 @@ files = zf.ZipFile("Assignments.zip", 'r')
 files.extractall('.')
 files.close()
 ```
+# if create readonly folder, delete coursera part in assignment notebook metadata.

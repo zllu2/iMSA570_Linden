@@ -2,8 +2,8 @@
 
 # Maintained by Linden Lu(zllu2@illinois.edu)
 
-# Coursera deletes all environment variables set inside 'Dockerfile'. 
-# If any environment variables need to be set, they must be set 
+# Coursera deletes all environment variables set inside 'Dockerfile'.
+# If any environment variables need to be set, they must be set
 # inside a wrapper bash script.
 export HOME=/grader
 
@@ -35,7 +35,7 @@ while [[ $# > 1 ]]
         ;;
       filename)
         # Original filename as uploaded by the learner.
-        # Note: Coursera 'always' renames the submission to the suggested filename 
+        # Note: Coursera 'always' renames the submission to the suggested filename
         # as specified within the authoring UI.
         # This is an optional parameter and most of the graders don't end up using it.
         ORIGINAL_FILENAME="$2"
@@ -84,7 +84,9 @@ nbgrader generate_assignment module
 
 # Copy the submission to corresponding directory in the nbgrader directory structure.
 mkdir -p /grader/submitted/student/module
-cp /shared/submission/"$NOTEBOOK" /grader/submitted/student/module/assignment_low.ipynb
+#cp /shared/submission/"$NOTEBOOK" /grader/submitted/student/module/assignment_low.ipynb
+# We can assume there is only one notebook file in submission folder
+cp /shared/submission/*.ipynb /grader/submitted/student/module/assignment_low.ipynb
 
 # Run nbgrader
 nbgrader autograde --assignment=module

@@ -41,3 +41,7 @@ SQL programming is very strict. An extra comma or a missing quote may well preve
 
 Good luck 
 
+## New Assignment Script
+Now I'd like to talk about module 8 assignment. Problem1 asks you to establish a database connection and get a cursor. For this problem, please create connection directly, don't use context manager since you need to return the connection and the cursor from the function. Don't worry about the resourses, the connection and the cursor will be relases at the end of the assignment.
+
+Problem 4 asks you to get courses with a particular subject. subject is a string, which has to be quoted if used in a sql query. The best way to construct this query is to use f string. You can find an example in the lesson 3 notebook that constructs a sql query using  f string.
