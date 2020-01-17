@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ACCY 576 Module 4 Live Session Code
+This course module centers on using programming modules, NumPy, and Pandas
+
+Course application: This file will focus on using Pandas to do some data
+preparation.
+
+Practical application: I'm in the market for a used pickup truck.
+I want to know what I should expect to pay for a used truck. I've gathered data
+from Criagslist for three states (IL, UT, NV) from December 1, 2019 through 
+January 9, 2020 (made up dates. I want to analyze that data to
+get insight and identify a vehicle about trucks that are for sale.
+"""
+#%%
+import pandas as pd
+import numpy as np
+import os # Allows interaction with the operating system from the Python editor. Use import winsound for Windows.
+import sys # Allows you to import a file with functions from a different folder
+sys.path.append('/Users/rnguymon/Box Sync/PythonScripts')
+import ronctions as rf
+#%% Read in the data
+il = pd.read_csv('carsTrucksIl.csv')
+ut = pd.read_csv('carsTrucksUt.csv')
+nv = pd.read_csv('carsTrucksNv.csv')
+os.system('say "Done reading in data"')
+# For Windows
+#import winsound
+#duration = 1000  # milliseconds
+#freq = 440  # Hz
+#winsound.Beep(freq, duration)
+#%% Visually inspect the data by looking in the variable explorer and opening the dataframes.
+# Things that stand out:
+# They have the same column names, and data looks mostly the same.
+#%% Let's look at dtypes for each dataframe
+il.dtypes
+ut.dtypes
+nv.dtypes
+#%% Let's create a pandas datafrme to compare the column names
+colNames = pd.DataFrame({'il': il.columns,
+                         'ut': ut.columns,
+                         'nv': nv.columns})
+# Create a new column to compare the column names.
+colNames['allSame'] = np.where((colNames.il == colNames.nv) & (colNames.il == colNames.ut), 0, 1)
+# Fix the column name so that the concatenate correctly
+il.rename(columns={'Manufacturer': 'manufacturer'}) # Leave off the inplace and be sure to show that it doesn't work
+il.rename(columns={'Manufacturer': 'manufacturer'}, inplace = True)
+#%% Check the column types
+colTypes = pd.DataFrame({'colNames': il.columns,
+                         'il': il.dtypes,
+                         'ut': ut.dtypes,
+                         'nv': nv.dtypes})
+# Create a new column to compare the column types.
+colTypes['allSame'] = np.where((colTypes.il == colTypes.nv) & (colTypes.il == colTypes.ut), 0, 1)
+# Show that when you concatenate integers and floats, they will all be converted to float. Nice!
+#%% Let's try combining the data into one dataframe
+trucks = pd.concat([il, ut, nv])
+trucks.shape[0] == il.shape[0]+ut.shape[0]+nv.shape[0] # Make sure that the number of columns adds up
+trucks.loc[0:1,'manufacturer'] # This doesn't work. Notice the error indicates non-unique labels.
+# Look at the index numbers and notice that they repeat.
+#%% Combine again. Before typing ignore_index, use the command + I feature to see the help that
+# pops up in the help window. Then set ignore_index to False.
+trucks = pd.concat([il, ut, nv], ignore_index = True)
+trucks.shape[0] == il.shape[0]+ut.shape[0]+nv.shape[0]
+trucks.loc[0:1,'manufacturer'] # Now it works.
+#%% Convert datePosted column to datetime object
+# First, try using this function that we made in a straightforward way.
+# It doesn't work because the function isn't ready to handle a column.
+trucks['datePosted'] = rf.get_datetime(trucks['datePosted'])
+# It works with an individual value, though it uses the same value for every row.
+trucks['datePosted'] = rf.get_datetime(trucks['datePosted'][0])
+# We have to apply the function to every row. We could use a for loop. Here's
+# something faster: apply with a lambda function.
+trucks['datePosted'] = trucks['datePosted'].apply(lambda x:rf.get_datetime(x))
+# Visually inspect the dataframe. It converted some, but not all.
+# Inspect the output of what it can't convert. Some of the dates appear to be 
+# in the dd/mm/yy format. This is troubling because that means that some of the
+# dates must be in that format for the whole file.
+# Visually inspect and determine that the nv file has the dd/mm/yy format.
+#%% Use the split, apply, combine approach
+trucks = pd.concat([il, ut, nv], ignore_index = True)
+nv2 = trucks[trucks.state == 'nv'].copy()
+# Easiest way in this case is to use the pandas built in to_datetime function, 
+# but it won't be able to tell between mm/dd/yy and dd/mm/yy. So, we still need
+# to use the split, apply, combine approach.
+nv2['dayPosted2'] = pd.to_datetime(nv2.datePosted, dayfirst = True)
+# Visually inspect to make sure the date was converted correctly. 
+# Since it did, re-run it, or drop the datePosted and rename the datePosted2 column
+# Faster to copy and paste, so I'll just do that
+nv2 = trucks[trucks.state == 'nv'].copy()
+nv2['dayPosted'] = pd.to_datetime(nv2.datePosted, dayfirst = True)
+# Repeat for the il and ut sets.
+il2 = trucks[trucks.state == 'il'].copy()
+il2['dayPosted'] = pd.to_datetime(il2.datePosted)
+ut2 = trucks[trucks.state == 'ut'].copy()
+ut2['dayPosted'] = pd.to_datetime(ut2.datePosted)
+# Combine them all together again
+trucks2 = pd.concat([il2, ut2, nv2], ignore_index = True)
+# Visually inspect to make sure it worked. It did!
+trucks2.dtypes
+
