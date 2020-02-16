@@ -110,7 +110,7 @@ Choices: ...
     - Answer: for
     - Choices: for, while, wait, long
 
-- Question 8.2: What type of Python loop runs until a condition is met?
+- Question 8.2: What type of Python loop repeats as long as a condition is True?
     - Type: Multiple Choice
     - Answer: while
     - Choices: for, while, wait, long

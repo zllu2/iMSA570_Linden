@@ -70,14 +70,14 @@ Choices: ...
 
 - Question 6.1: What does following code creates?
  import numpy as np  
- np.arrange(10)
+ np.arange(10)
   - Type: Multiple choice (single correct response)
   - Answer: A numpy array contains integers from 0 to 9.
   - Choices: A numpy array contains integers from 0 to 9; A numpy array contains integers from 1 to 10; A python list contains integers from 0 to 9; A python list contains integers from 1 to 10.
 
 - Question 6.2: What does following code creates?
  import numpy as np  
- np.arrange(1, 10)
+ np.arange(1, 10)
   - Type: Multiple choice (single correct response)
   - Answer: A numpy array contains integers from 1 to 9.
   - Choices: A numpy array contains integers from 1 to 9; A numpy array contains integers from 1 to 10; A python list contains integers from 1 to 9; A python list contains integers from 1 to 10.
