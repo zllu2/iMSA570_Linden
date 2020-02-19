@@ -2,7 +2,7 @@
 
 # Major steps:
 
-1. Create assignments with nbgrader, generate release(generate_assignment)
+1. Create assignments with nbgrader, generate release(nbgrader generate_assignment module1 --force)
 2. Create programming assignment on Coursera, get graded_item_id from URL. ie. 5FK0X (/programming/5FK0X?versionId=..), partId and file name(ie. m1_assignment.ipynb)
 3. Create notebook assignment, get launchid from URL, ie. w5fdK(.../notebook/w5fdK/launcher?)
 4. Modify assignment notebook metadata, add coursera block including course_slug, graded_item_id and launch_item_id.
