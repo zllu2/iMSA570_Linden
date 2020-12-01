@@ -1,0 +1,19 @@
+Problem 1 (20 points):
+
+Download and install Anaconda 64-bit Python 3.8 version. You may find installation instruction in the Lesson 1.2.
+
+Get familiar with Jupyter Notebook(or JupyterLab).
+
+Problem 2 (60 points):
+
+Go to Data USA(https://datausa.io/). Choose one of the articles and write a concise markdown document about the interesting ideas contained in the article.  
+
+Your submission should be a jupyter notebook file with extension .ipynb, which include:
+
+1. Markdown Headers to specify the parts of your report. (Use at least two levels of headers.)
+2. Include at least one bold and one italic word or phrase to emphasize concepts. 
+3. One enumerated or unenumerated list.
+4. Clear analysis with proper spelling and grammar.
+
+Save the notebook and submit it as your assignment submission.
+

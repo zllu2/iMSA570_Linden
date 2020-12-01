@@ -4,11 +4,12 @@
 DROP TABLE IF EXISTS mySuppliers;
 DROP TABLE IF EXISTS myProducts;
 
--- Vendor Table
+-- Suppliers Table
     
 CREATE TABLE mySuppliers (
     supplierNumber INT NOT NULL,
-    supplierName TEXT
+    supplierName TEXT,
+    PRIMARY KEY(supplierNumber)
 ) ;
 
 -- Product Table
@@ -18,5 +19,7 @@ CREATE TABLE myProducts (
     price REAL,
     supplierNumber INT,
     stockDate TEXT,
-    description TEXT
+    description TEXT,
+    PRIMARY KEY(itemNumber),
+    FOREIGN KEY(supplierNumber) REFERENCES mySuppliers(supplierNumber)
 ) ;
